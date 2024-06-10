@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>financial-data-analysis-ara</title>
+
+    <style>
+        .hidden { display: none; }
+        body, html {
+            margin: 10px;
+            padding: 0;
+            height: 100%;
+            position: relative;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 75px;
+        }
+        .image-wrapper {
+            max-width: 100%;
+        }
+        .image {
+            width: 100%;
+            height: auto;
+        }
+        h1{
+            text-align: center;
+        }
+        .link {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0; 
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.5); 
+            text-align: center;
+            padding: 1px 0; 
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1); 
+            box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+        .caption {
+            max-width: 50%;
+            text-align: justify;
+            padding-left: 10px;
+        }
+        .divv {
+            padding-top: 75px;
+            text-align: justify;
+        }
+        .dashed-line {
+            width: 100%;
+            border-top: 2px dashed #333; /* ketebalan dan gaya garis */
+            margin: 5px; /* jarak antara dua garis */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Analisis Data Keuangan</h1>
+
+    <p style="text-align: center; padding-bottom: 50px;">Halaman ini berisi tampilan grafik yang dihasilkan dari baris kode yang dapat dilihat pada
+        <a href="https://github.com/ImtiyasAzzahra/financial-data-analysis/blob/master/financial-data-analysis-ara.ipynb" 
+        class="link" target="_blank">halaman berikut</a>, enjoy!
+    </p>
+
+    <div class="dashed-lines">
+        <div class="dashed-line"></div>
+        <div class="dashed-line"></div>
+    </div>
+    
+    <div class="container">        
+        <div class="image-wrapper">
+          <img class="image" src="g_1.png" alt="Gambar" />          
+        </div>
+        <div class="caption">
+            <p>Grafik disamping menjelaskan perkembangan Pendapatan (Revenue) dan Laba (Profit) selama tahun 2023.
+                Dari grafik tersebut terlihat bahwa, penjulan dibulan pertama menjadi penjualan tertinggi pada tahun tersebut.</p>
+        </div>
+    </div>
+
+    <div class="container">        
+        <div class="image-wrapper">
+          <img class="image" src="g_2.png" alt="Gambar" />          
+        </div>
+        <div class="caption">
+            <p>Grafik selanjutnya menjelaskan perkembangan Rasio Laba (Revenue) selama tahun 2023.
+                Bulan ke-10 memiliki tingkat rasio laba tertinggi. 
+                Sedangkan pada bulan ke-11 memiliki tingkat rasio laba terendah pada tahun tersebut.</p>
+        </div>
+    </div>
+
+    <div class="container">        
+        <div class="image-wrapper">
+          <img class="image" src="g_3.png" alt="Gambar" />          
+        </div>
+        <div class="caption">
+            <p>Korelasi antara Pendapatan (Revenue) dan Laba (Profit) dapat dilihat pada grafik disamping.
+                Dimana laba selalu memiliki nilai yang lebih kecil dari pendapatan.</p>
+        </div>
+    </div>
+
+    <p class="divv" style="padding-left: 10px;">Berikut merupakan grafik yang digunakan dalam identifikasi outlier 
+        pada data Pendapatan (Revenue) dan biaya (Expenses). Dari grafik tersebut, terlihat adanya outlier pada
+        data biaya (Expenses). Sedangkan pada data Pendapatan (Revenue), tidak ditemukan keberadaan outlier.</p>
+    <iframe src="g_4.html" width="100%" height="600px" frameborder="0"></iframe>
+
+    <div class="container">        
+        <div class="image-wrapper">
+          <img class="image" src="g_5.png" alt="Gambar" />          
+        </div>
+        <div class="caption">
+            <p>Grafik disamping menjelaskan terkait evaluasi kinerja keuangan selama tahun 2023. 
+                Serta prediksi kinerja keuangan tahun berikutnya (2024), berdasarkan kinerja keuangan selama tahun 2023.
+                Terdapat dua jenis model yang digunakan dalam prediksi tersebut, yakni Peramalan ARIMA dan Regresi Linear.</p>
+        </div>
+    </div>
+
+    <div class="container">        
+        <div class="image-wrapper">
+          <img class="image" src="g_6.png" alt="Gambar" style="padding-bottom: 60px;" />          
+        </div>
+        <div class="caption">
+            <p>Grafik terakhir menjelaskan perkembangan Margin Keuntungan (Profit Margin) selama tahun 2023.
+                Bulan ke-10 memiliki tingkat rasio laba tertinggi. 
+                Sedangkan pada bulan ke-11 memiliki tingkat rasio laba terendah pada tahun tersebut.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>©2024 Ara
+            <br>Analisis Data Keuangan</p>
+    </div>
+</body>
+</html>
